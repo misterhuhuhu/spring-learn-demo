@@ -20,6 +20,7 @@ import javax.annotation.Resource;
 import java.sql.Statement;
 import java.util.List;
 import java.util.Properties;
+import java.util.UUID;
 
 /**
  * @auther 胡昊宁

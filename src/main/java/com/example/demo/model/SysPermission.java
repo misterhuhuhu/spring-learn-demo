@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -14,26 +15,27 @@ import java.util.Date;
 @Entity
 public class SysPermission {
     
-    public SysPermission() {
-    }
-    
-    public SysPermission(final Long id, final Long parentId, final String system, final String name, final Integer type, final Integer sort, final Integer deep, final String menuUrl, final String icon, final String httpMethod, final String resourceName, final Integer status, final Long creator, final Date createTime, final Long modifier, final Date updateTime) {
-        this.id = id;
-        this.parentId = parentId;
-        this.system = system;
-        this.name = name;
-        this.type = type;
-        this.sort = sort;
-        this.deep = deep;
-        this.menuUrl = menuUrl;
-        this.icon = icon;
-        this.httpMethod = httpMethod;
-        this.resourceName = resourceName;
-        this.status = status;
-        this.creator = creator;
-        this.createTime = createTime;
-        this.modifier = modifier;
-        this.updateTime = updateTime;
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SysPermission{");
+        sb.append("id=").append(id);
+        sb.append(", parentId=").append(parentId);
+        sb.append(", system='").append(system).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", type=").append(type);
+        sb.append(", sort=").append(sort);
+        sb.append(", deep=").append(deep);
+        sb.append(", menuUrl='").append(menuUrl).append('\'');
+        sb.append(", icon='").append(icon).append('\'');
+        sb.append(", httpMethod='").append(httpMethod).append('\'');
+        sb.append(", resourceName='").append(resourceName).append('\'');
+        sb.append(", status=").append(status);
+        sb.append(", creator=").append(creator);
+        sb.append(", createTime=").append(createTime);
+        sb.append(", modifier=").append(modifier);
+        sb.append(", updateTime=").append(updateTime);
+        sb.append('}');
+        return sb.toString();
     }
     
     /**
@@ -107,7 +109,7 @@ public class SysPermission {
     /**
     * 创建时间
     */
-    private Date createTime;
+    private LocalDateTime createTime;
 
     /**
     * 修改人
@@ -117,7 +119,7 @@ public class SysPermission {
     /**
     * 更新时间
     */
-    private Date updateTime;
+    private LocalDateTime updateTime;
 
     public Long getId() {
         return id;
@@ -223,11 +225,11 @@ public class SysPermission {
         this.creator = creator;
     }
 
-    public Date getCreateTime() {
+    public LocalDateTime getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
 
@@ -239,11 +241,11 @@ public class SysPermission {
         this.modifier = modifier;
     }
 
-    public Date getUpdateTime() {
+    public LocalDateTime getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(Date updateTime) {
+    public void setUpdateTime(LocalDateTime updateTime) {
         this.updateTime = updateTime;
     }
 }

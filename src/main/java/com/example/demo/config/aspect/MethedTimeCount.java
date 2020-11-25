@@ -12,7 +12,6 @@ import org.springframework.util.StopWatch;
  * @date 2020/11/24
  */
 @Aspect
-@Component
 public class MethedTimeCount {
     
     

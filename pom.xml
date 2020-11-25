@@ -70,6 +70,15 @@
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
         <!--Spring data END-->
+
+
+        <!--tools begin-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.5.1</version>
+        </dependency>
+        <!--tools end-->
     </dependencies>
 
     <build>

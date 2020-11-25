@@ -24,4 +24,8 @@ public interface SysPermissionMapper {
     int updateBatch(List<SysPermission> list);
 
     int batchInsert(@Param("list") List<SysPermission> list);
+    
+    List<SysPermission> selectAll();
+
+	
 }

@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.mapper.SysPermissionMapper;
 import com.example.demo.mapper.SysUserMapper;
 import com.example.demo.model.SysUser;
 import com.example.demo.repository.SysUserRepository;
@@ -21,6 +22,9 @@ public class HelloController {
     
     @Resource
     private SysUserRepository sysUserRepository;
+    
+    @Resource
+    private SysPermissionMapper sysPermissionMapper;
     @GetMapping("/mapper")
     public Object mapper(){
         List<SysUser> sysUsers = sysUserMapper.selectAll();
@@ -47,5 +51,10 @@ public class HelloController {
         return all;
     }
     
+    @GetMapping("/sysPermission")
+    public Object sysPermission(){
+        
+        return sysPermissionMapper.selectAll();
+    }
     
 }

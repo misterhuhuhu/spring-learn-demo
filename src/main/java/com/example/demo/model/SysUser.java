@@ -13,27 +13,7 @@ import java.time.LocalDateTime;
  */
 @Entity
 public final class SysUser {
-    public SysUser() {
-    }
-    
-    public SysUser(final Long id, final String account, final String password, final String name, final String mobile, final Integer gender, final Long deptId, final String job, final String jobRank, final Integer status, final Long creator, final LocalDateTime createTime, final Long modifier, final LocalDateTime updateTime, final Byte viewAuthority) {
-        this.id = id;
-        this.account = account;
-        this.password = password;
-        this.name = name;
-        this.mobile = mobile;
-        this.gender = gender;
-        this.deptId = deptId;
-        this.job = job;
-        this.jobRank = jobRank;
-        this.status = status;
-        this.creator = creator;
-        this.createTime = createTime;
-        this.modifier = modifier;
-        this.updateTime = updateTime;
-        this.viewAuthority = viewAuthority;
-    }
-    
+
     /**
      * 主键
      */
