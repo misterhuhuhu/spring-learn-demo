@@ -39,7 +39,6 @@ public class JacksonConfig {
         JavaTimeModule javaTimeModule = new JavaTimeModule();
         javaTimeModule.addSerializer(LocalDateTime.class, new LocalDateTimeSerializer(DateTimeFormatter.ofPattern(pattern)));
         javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ofPattern(pattern)));
-        javaTimeModule.addDeserializer(Date.class, new DateDeserializers.DateDeserializer());
     
     
         // Long类型序列化String类型配置

@@ -22,11 +22,6 @@ spring:
       poolPreparedStatements: true
   profiles:
     active: B,A
-#指定打印某个类的日志
-logging:
-  level:
-    com.example.demo.mapper.SysUserMapper: debug
-    com.example.demo.mapper.SysPermissionMapper: debug
 
 ---
 # mybatis
@@ -36,17 +31,6 @@ spring:
   config:
     activate:
       on-profile: A
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
-    cache-enabled: true
-  mapper-locations:
-    # 此处是正常业务的mapper路径
-    - classpath:mapper/*.xml
-    # 如果基于数据库实现分布式唯一键，将这里放开
-    # 这是UidGenerator的mapper路径
-    # - classpath:/mybatis/mapper/*.xml
-  type-aliases-package: com.example.demo.model
 ---
 # spring data jpa
 server:
