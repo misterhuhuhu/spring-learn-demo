@@ -1103,13 +1103,13 @@
     
     
     <select id="selectJoinSysUser" resultMap="AppEtpUser">
-        select a.id, a.name as name,b.name as creator, a.credit_code,a.create_time,a.update_time,b.name as modifier
+        select
+        a.id, a.name as name,b.name as creator, a.credit_code,a.create_time,a.update_time,b.name as modifier
         from app_etp_user a
-                     left join sys_user b on a.creator = b.id and b.modifier = b.id
-        <!--   效果等于     SELECT a.id, a.name AS NAME,b.name AS creator,a.create_time,a.update_time,b.name AS MODIFIER
+        left join sys_user b on a.creator = b.id and b.modifier = b.id
+        <!--   效果等于
+         SELECT a.id, a.name AS NAME,b.name AS creator,a.create_time,a.update_time,b.name AS MODIFIER
         FROM `sys_role` a
-                     LEFT JOIN  sys_user b ON a.creator = b.id  WHERE a.creator = b.id
-                     
-                     -->
+        LEFT JOIN  sys_user b ON a.creator = b.id  WHERE a.creator = b.id-->
     </select>
 </mapper>

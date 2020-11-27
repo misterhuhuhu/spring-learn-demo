@@ -31,6 +31,4 @@ public interface SysUserMapper {
     
     List<SysUser> selectall();
     
-    
-    List<SysUserDemo> getEntireSysUser();
 }

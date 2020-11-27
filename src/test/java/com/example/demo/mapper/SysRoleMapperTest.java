@@ -1,5 +1,6 @@
 package com.example.demo.mapper;
 
+import com.example.demo.model.SysPermission;
 import com.example.demo.model.SysRole;
 import com.example.demo.model.SysUser;
 import com.example.demo.model.SysUserDemo;
@@ -17,21 +18,19 @@ class SysRoleMapperTest {
     @Resource
     private SysRoleMapper sysRoleMapper;
     @Resource
-    private SysUserMapper sysUserMapper;
+    private SysPermissionMapper sysPermissionMapper;
     
     @Test
     void getEntireSysRole() {
         final List<SysRole> entireSysRole = sysRoleMapper.getEntireSysRole();
-        entireSysRole.forEach(a -> {
-            if (a.getId().equals(4562286404100440064L)) {
-                System.out.println(a.getSysPermissionList());
-            }
-        });
+        entireSysRole.forEach(a -> System.out.println("-----------SysPermissionList =" + a.getSysPermissionList().size()));
     }
     
     @Test
-    void getEntirSysUser() {
-        final List<SysUserDemo> entireSysUser = sysUserMapper.getEntireSysUser();
-        System.out.println(entireSysUser.size());
+    void getEntirePermission() {
+        final List<SysPermission> sysPermissions = sysPermissionMapper.selectAll();
+        System.out.println(sysPermissions.size());
+        
     }
+    
 }
