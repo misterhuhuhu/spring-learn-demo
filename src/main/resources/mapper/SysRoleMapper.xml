@@ -325,29 +325,9 @@
         <result column="role_create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="role_modifier" jdbcType="BIGINT" property="modifier"/>
         <result column="role_update_time" jdbcType="TIMESTAMP" property="updateTime"/>
-        <collection property="sysPermissionList" column="role_id" javaType="java.util.ArrayList"
+        <collection property="sysPermissionList" column="{role.id}" javaType="java.util.ArrayList"
                     ofType="com.example.demo.model.SysPermission"
                     select="com.example.demo.mapper.SysPermissionMapper.selectAll"/>
     </resultMap>
     
-    <select id="getEntireSysRole" resultMap="EntireSysRole" >
-        SELECT a.id          as role_id,
-               a.name        as role_name,
-               a.status      as role_status,
-               a.creator     as role_creator,
-               a.create_time as role_create_time,
-               a.modifier    as role_modifier,
-               a.update_time as role_update_time,
-               b.id role_permission_id,
-               b.role_id role_permission_role_id,
-               b.permission_id role_permission_role_permission_id,
-               b.`system` role_permission_role_system,
-               b.half_checked role_permission_role_half_checked,
-               b.creator role_permission_role_creator,
-               b.create_time role_permission_role_create_time,
-               b.modifier role_permission_role_modifier,
-               b.update_time role_permission_role_update_time
-        FROM sys_role a
-                     LEFT JOIN sys_role_permission b on a.id = b.permission_id
-    </select>
 </mapper>
