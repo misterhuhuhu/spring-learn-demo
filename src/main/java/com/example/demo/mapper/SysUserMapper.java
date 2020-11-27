@@ -2,8 +2,9 @@ package com.example.demo.mapper;
 
 import com.example.demo.model.SysUser;
 import java.util.List;
+
+import com.example.demo.model.SysUserDemo;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.validation.annotation.Validated;
 
 public interface SysUserMapper {
     int deleteByPrimaryKey(Long id);
@@ -22,14 +23,14 @@ public interface SysUserMapper {
     
     int updateByPrimaryKey(SysUser record);
     
-    int updateBatch(@Validated List<SysUser> list);
+    int updateBatch(List<SysUser> list);
+    
+    int updateBatchSelective(List<SysUser> list);
     
     int batchInsert(@Param("list") List<SysUser> list);
     
-    List<SysUser> selectAll();
-    
-    List<SysUser> selectByMobileLike(@Param("likeMobile")String likeMobile);
+    List<SysUser> selectall();
     
     
-	
+    List<SysUserDemo> getEntireSysUser();
 }
