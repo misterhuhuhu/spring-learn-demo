@@ -3,7 +3,7 @@
 <mapper namespace="com.example.demo.mapper.SysPermissionMapper">
   <resultMap id="BaseResultMap" type="com.example.demo.model.SysPermission">
     <!--@mbg.generated-->
-    <!--@Table sys_permission-->
+    <!--@Table `sys_permission`-->
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="parent_id" jdbcType="BIGINT" property="parentId" />
     <result column="system" jdbcType="VARCHAR" property="system" />
@@ -23,28 +23,28 @@
   </resultMap>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    id, parent_id, `system`, `name`, `type`, sort, deep, menu_url, icon, http_method, 
-    resource_name, `status`, creator, create_time, modifier, update_time
+    `id`, `parent_id`, `system`, `name`, `type`, `sort`, `deep`, `menu_url`, `icon`, 
+    `http_method`, `resource_name`, `status`, `creator`, `create_time`, `modifier`, `update_time`
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from sys_permission
-    where id = #{id,jdbcType=BIGINT}
+    from `sys_permission`
+    where `id` = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     <!--@mbg.generated-->
-    delete from sys_permission
-    where id = #{id,jdbcType=BIGINT}
+    delete from `sys_permission`
+    where `id` = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.example.demo.model.SysPermission">
     <!--@mbg.generated-->
-    insert into sys_permission (id, parent_id, `system`, 
-      `name`, `type`, sort, deep, 
-      menu_url, icon, http_method, 
-      resource_name, `status`, creator, 
-      create_time, modifier, update_time
+    insert into `sys_permission` (`id`, `parent_id`, `system`, 
+      `name`, `type`, `sort`, `deep`, 
+      `menu_url`, `icon`, `http_method`, 
+      `resource_name`, `status`, `creator`, 
+      `create_time`, `modifier`, `update_time`
       )
     values (#{id,jdbcType=BIGINT}, #{parentId,jdbcType=BIGINT}, #{system,jdbcType=VARCHAR}, 
       #{name,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, #{sort,jdbcType=INTEGER}, #{deep,jdbcType=INTEGER}, 
@@ -55,13 +55,13 @@
   </insert>
   <insert id="insertSelective" parameterType="com.example.demo.model.SysPermission">
     <!--@mbg.generated-->
-    insert into sys_permission
+    insert into `sys_permission`
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
-        id,
+        `id`,
       </if>
       <if test="parentId != null">
-        parent_id,
+        `parent_id`,
       </if>
       <if test="system != null">
         `system`,
@@ -73,37 +73,37 @@
         `type`,
       </if>
       <if test="sort != null">
-        sort,
+        `sort`,
       </if>
       <if test="deep != null">
-        deep,
+        `deep`,
       </if>
       <if test="menuUrl != null">
-        menu_url,
+        `menu_url`,
       </if>
       <if test="icon != null">
-        icon,
+        `icon`,
       </if>
       <if test="httpMethod != null">
-        http_method,
+        `http_method`,
       </if>
       <if test="resourceName != null">
-        resource_name,
+        `resource_name`,
       </if>
       <if test="status != null">
         `status`,
       </if>
       <if test="creator != null">
-        creator,
+        `creator`,
       </if>
       <if test="createTime != null">
-        create_time,
+        `create_time`,
       </if>
       <if test="modifier != null">
-        modifier,
+        `modifier`,
       </if>
       <if test="updateTime != null">
-        update_time,
+        `update_time`,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -159,10 +159,10 @@
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.model.SysPermission">
     <!--@mbg.generated-->
-    update sys_permission
+    update `sys_permission`
     <set>
       <if test="parentId != null">
-        parent_id = #{parentId,jdbcType=BIGINT},
+        `parent_id` = #{parentId,jdbcType=BIGINT},
       </if>
       <if test="system != null">
         `system` = #{system,jdbcType=VARCHAR},
@@ -174,151 +174,267 @@
         `type` = #{type,jdbcType=INTEGER},
       </if>
       <if test="sort != null">
-        sort = #{sort,jdbcType=INTEGER},
+        `sort` = #{sort,jdbcType=INTEGER},
       </if>
       <if test="deep != null">
-        deep = #{deep,jdbcType=INTEGER},
+        `deep` = #{deep,jdbcType=INTEGER},
       </if>
       <if test="menuUrl != null">
-        menu_url = #{menuUrl,jdbcType=VARCHAR},
+        `menu_url` = #{menuUrl,jdbcType=VARCHAR},
       </if>
       <if test="icon != null">
-        icon = #{icon,jdbcType=VARCHAR},
+        `icon` = #{icon,jdbcType=VARCHAR},
       </if>
       <if test="httpMethod != null">
-        http_method = #{httpMethod,jdbcType=VARCHAR},
+        `http_method` = #{httpMethod,jdbcType=VARCHAR},
       </if>
       <if test="resourceName != null">
-        resource_name = #{resourceName,jdbcType=VARCHAR},
+        `resource_name` = #{resourceName,jdbcType=VARCHAR},
       </if>
       <if test="status != null">
         `status` = #{status,jdbcType=INTEGER},
       </if>
       <if test="creator != null">
-        creator = #{creator,jdbcType=BIGINT},
+        `creator` = #{creator,jdbcType=BIGINT},
       </if>
       <if test="createTime != null">
-        create_time = #{createTime,jdbcType=TIMESTAMP},
+        `create_time` = #{createTime,jdbcType=TIMESTAMP},
       </if>
       <if test="modifier != null">
-        modifier = #{modifier,jdbcType=BIGINT},
+        `modifier` = #{modifier,jdbcType=BIGINT},
       </if>
       <if test="updateTime != null">
-        update_time = #{updateTime,jdbcType=TIMESTAMP},
+        `update_time` = #{updateTime,jdbcType=TIMESTAMP},
       </if>
     </set>
-    where id = #{id,jdbcType=BIGINT}
+    where `id` = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.example.demo.model.SysPermission">
     <!--@mbg.generated-->
-    update sys_permission
-    set parent_id = #{parentId,jdbcType=BIGINT},
+    update `sys_permission`
+    set `parent_id` = #{parentId,jdbcType=BIGINT},
       `system` = #{system,jdbcType=VARCHAR},
       `name` = #{name,jdbcType=VARCHAR},
       `type` = #{type,jdbcType=INTEGER},
-      sort = #{sort,jdbcType=INTEGER},
-      deep = #{deep,jdbcType=INTEGER},
-      menu_url = #{menuUrl,jdbcType=VARCHAR},
-      icon = #{icon,jdbcType=VARCHAR},
-      http_method = #{httpMethod,jdbcType=VARCHAR},
-      resource_name = #{resourceName,jdbcType=VARCHAR},
+      `sort` = #{sort,jdbcType=INTEGER},
+      `deep` = #{deep,jdbcType=INTEGER},
+      `menu_url` = #{menuUrl,jdbcType=VARCHAR},
+      `icon` = #{icon,jdbcType=VARCHAR},
+      `http_method` = #{httpMethod,jdbcType=VARCHAR},
+      `resource_name` = #{resourceName,jdbcType=VARCHAR},
       `status` = #{status,jdbcType=INTEGER},
-      creator = #{creator,jdbcType=BIGINT},
-      create_time = #{createTime,jdbcType=TIMESTAMP},
-      modifier = #{modifier,jdbcType=BIGINT},
-      update_time = #{updateTime,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=BIGINT}
+      `creator` = #{creator,jdbcType=BIGINT},
+      `create_time` = #{createTime,jdbcType=TIMESTAMP},
+      `modifier` = #{modifier,jdbcType=BIGINT},
+      `update_time` = #{updateTime,jdbcType=TIMESTAMP}
+    where `id` = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateBatch" parameterType="java.util.List">
     <!--@mbg.generated-->
-    update sys_permission
+    update `sys_permission`
     <trim prefix="set" suffixOverrides=",">
-      <trim prefix="parent_id = case" suffix="end,">
+      <trim prefix="`parent_id` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.parentId,jdbcType=BIGINT}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.parentId,jdbcType=BIGINT}
         </foreach>
       </trim>
       <trim prefix="`system` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.system,jdbcType=VARCHAR}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.system,jdbcType=VARCHAR}
         </foreach>
       </trim>
       <trim prefix="`name` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.name,jdbcType=VARCHAR}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.name,jdbcType=VARCHAR}
         </foreach>
       </trim>
       <trim prefix="`type` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.type,jdbcType=INTEGER}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.type,jdbcType=INTEGER}
         </foreach>
       </trim>
-      <trim prefix="sort = case" suffix="end,">
+      <trim prefix="`sort` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.sort,jdbcType=INTEGER}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.sort,jdbcType=INTEGER}
         </foreach>
       </trim>
-      <trim prefix="deep = case" suffix="end,">
+      <trim prefix="`deep` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.deep,jdbcType=INTEGER}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.deep,jdbcType=INTEGER}
         </foreach>
       </trim>
-      <trim prefix="menu_url = case" suffix="end,">
+      <trim prefix="`menu_url` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.menuUrl,jdbcType=VARCHAR}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.menuUrl,jdbcType=VARCHAR}
         </foreach>
       </trim>
-      <trim prefix="icon = case" suffix="end,">
+      <trim prefix="`icon` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.icon,jdbcType=VARCHAR}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.icon,jdbcType=VARCHAR}
         </foreach>
       </trim>
-      <trim prefix="http_method = case" suffix="end,">
+      <trim prefix="`http_method` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.httpMethod,jdbcType=VARCHAR}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.httpMethod,jdbcType=VARCHAR}
         </foreach>
       </trim>
-      <trim prefix="resource_name = case" suffix="end,">
+      <trim prefix="`resource_name` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.resourceName,jdbcType=VARCHAR}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.resourceName,jdbcType=VARCHAR}
         </foreach>
       </trim>
       <trim prefix="`status` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.status,jdbcType=INTEGER}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.status,jdbcType=INTEGER}
         </foreach>
       </trim>
-      <trim prefix="creator = case" suffix="end,">
+      <trim prefix="`creator` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.creator,jdbcType=BIGINT}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.creator,jdbcType=BIGINT}
         </foreach>
       </trim>
-      <trim prefix="create_time = case" suffix="end,">
+      <trim prefix="`create_time` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.createTime,jdbcType=TIMESTAMP}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.createTime,jdbcType=TIMESTAMP}
         </foreach>
       </trim>
-      <trim prefix="modifier = case" suffix="end,">
+      <trim prefix="`modifier` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.modifier,jdbcType=BIGINT}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.modifier,jdbcType=BIGINT}
         </foreach>
       </trim>
-      <trim prefix="update_time = case" suffix="end,">
+      <trim prefix="`update_time` = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=BIGINT} then #{item.updateTime,jdbcType=TIMESTAMP}
+          when `id` = #{item.id,jdbcType=BIGINT} then #{item.updateTime,jdbcType=TIMESTAMP}
         </foreach>
       </trim>
     </trim>
-    where id in
+    where `id` in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=BIGINT}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update `sys_permission`
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="`parent_id` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.parentId != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.parentId,jdbcType=BIGINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`system` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.system != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.system,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`name` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.name != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.name,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`type` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.type != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.type,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`sort` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.sort != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.sort,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`deep` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.deep != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.deep,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`menu_url` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.menuUrl != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.menuUrl,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`icon` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.icon != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.icon,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`http_method` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.httpMethod != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.httpMethod,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`resource_name` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.resourceName != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.resourceName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`status` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.status != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.status,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`creator` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.creator != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.creator,jdbcType=BIGINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`create_time` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.createTime != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.createTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`modifier` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.modifier != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.modifier,jdbcType=BIGINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="`update_time` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.updateTime != null">
+            when `id` = #{item.id,jdbcType=BIGINT} then #{item.updateTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where `id` in
     <foreach close=")" collection="list" item="item" open="(" separator=", ">
       #{item.id,jdbcType=BIGINT}
     </foreach>
   </update>
   <insert id="batchInsert" parameterType="map">
     <!--@mbg.generated-->
-    insert into sys_permission
-    (id, parent_id, `system`, `name`, `type`, sort, deep, menu_url, icon, http_method, 
-      resource_name, `status`, creator, create_time, modifier, update_time)
+    insert into `sys_permission`
+    (`id`, `parent_id`, `system`, `name`, `type`, `sort`, `deep`, `menu_url`, `icon`, 
+      `http_method`, `resource_name`, `status`, `creator`, `create_time`, `modifier`, 
+      `update_time`)
     values
     <foreach collection="list" item="item" separator=",">
       (#{item.id,jdbcType=BIGINT}, #{item.parentId,jdbcType=BIGINT}, #{item.system,jdbcType=VARCHAR}, 
@@ -331,9 +447,10 @@
   </insert>
   <insert id="insertOrUpdate" parameterType="com.example.demo.model.SysPermission">
     <!--@mbg.generated-->
-    insert into sys_permission
-    (id, parent_id, `system`, `name`, `type`, sort, deep, menu_url, icon, http_method, 
-      resource_name, `status`, creator, create_time, modifier, update_time)
+    insert into `sys_permission`
+    (`id`, `parent_id`, `system`, `name`, `type`, `sort`, `deep`, `menu_url`, `icon`, 
+      `http_method`, `resource_name`, `status`, `creator`, `create_time`, `modifier`, 
+      `update_time`)
     values
     (#{id,jdbcType=BIGINT}, #{parentId,jdbcType=BIGINT}, #{system,jdbcType=VARCHAR}, 
       #{name,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, #{sort,jdbcType=INTEGER}, #{deep,jdbcType=INTEGER}, 
@@ -342,32 +459,32 @@
       #{createTime,jdbcType=TIMESTAMP}, #{modifier,jdbcType=BIGINT}, #{updateTime,jdbcType=TIMESTAMP}
       )
     on duplicate key update 
-    id = #{id,jdbcType=BIGINT}, 
-    parent_id = #{parentId,jdbcType=BIGINT}, 
+    `id` = #{id,jdbcType=BIGINT}, 
+    `parent_id` = #{parentId,jdbcType=BIGINT}, 
     `system` = #{system,jdbcType=VARCHAR}, 
     `name` = #{name,jdbcType=VARCHAR}, 
     `type` = #{type,jdbcType=INTEGER}, 
-    sort = #{sort,jdbcType=INTEGER}, 
-    deep = #{deep,jdbcType=INTEGER}, 
-    menu_url = #{menuUrl,jdbcType=VARCHAR}, 
-    icon = #{icon,jdbcType=VARCHAR}, 
-    http_method = #{httpMethod,jdbcType=VARCHAR}, 
-    resource_name = #{resourceName,jdbcType=VARCHAR}, 
+    `sort` = #{sort,jdbcType=INTEGER}, 
+    `deep` = #{deep,jdbcType=INTEGER}, 
+    `menu_url` = #{menuUrl,jdbcType=VARCHAR}, 
+    `icon` = #{icon,jdbcType=VARCHAR}, 
+    `http_method` = #{httpMethod,jdbcType=VARCHAR}, 
+    `resource_name` = #{resourceName,jdbcType=VARCHAR}, 
     `status` = #{status,jdbcType=INTEGER}, 
-    creator = #{creator,jdbcType=BIGINT}, 
-    create_time = #{createTime,jdbcType=TIMESTAMP}, 
-    modifier = #{modifier,jdbcType=BIGINT}, 
-    update_time = #{updateTime,jdbcType=TIMESTAMP}
+    `creator` = #{creator,jdbcType=BIGINT}, 
+    `create_time` = #{createTime,jdbcType=TIMESTAMP}, 
+    `modifier` = #{modifier,jdbcType=BIGINT}, 
+    `update_time` = #{updateTime,jdbcType=TIMESTAMP}
   </insert>
   <insert id="insertOrUpdateSelective" parameterType="com.example.demo.model.SysPermission">
     <!--@mbg.generated-->
-    insert into sys_permission
+    insert into `sys_permission`
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
-        id,
+        `id`,
       </if>
       <if test="parentId != null">
-        parent_id,
+        `parent_id`,
       </if>
       <if test="system != null">
         `system`,
@@ -379,37 +496,37 @@
         `type`,
       </if>
       <if test="sort != null">
-        sort,
+        `sort`,
       </if>
       <if test="deep != null">
-        deep,
+        `deep`,
       </if>
       <if test="menuUrl != null">
-        menu_url,
+        `menu_url`,
       </if>
       <if test="icon != null">
-        icon,
+        `icon`,
       </if>
       <if test="httpMethod != null">
-        http_method,
+        `http_method`,
       </if>
       <if test="resourceName != null">
-        resource_name,
+        `resource_name`,
       </if>
       <if test="status != null">
         `status`,
       </if>
       <if test="creator != null">
-        creator,
+        `creator`,
       </if>
       <if test="createTime != null">
-        create_time,
+        `create_time`,
       </if>
       <if test="modifier != null">
-        modifier,
+        `modifier`,
       </if>
       <if test="updateTime != null">
-        update_time,
+        `update_time`,
       </if>
     </trim>
     values
@@ -466,10 +583,10 @@
     on duplicate key update 
     <trim suffixOverrides=",">
       <if test="id != null">
-        id = #{id,jdbcType=BIGINT},
+        `id` = #{id,jdbcType=BIGINT},
       </if>
       <if test="parentId != null">
-        parent_id = #{parentId,jdbcType=BIGINT},
+        `parent_id` = #{parentId,jdbcType=BIGINT},
       </if>
       <if test="system != null">
         `system` = #{system,jdbcType=VARCHAR},
@@ -481,80 +598,38 @@
         `type` = #{type,jdbcType=INTEGER},
       </if>
       <if test="sort != null">
-        sort = #{sort,jdbcType=INTEGER},
+        `sort` = #{sort,jdbcType=INTEGER},
       </if>
       <if test="deep != null">
-        deep = #{deep,jdbcType=INTEGER},
+        `deep` = #{deep,jdbcType=INTEGER},
       </if>
       <if test="menuUrl != null">
-        menu_url = #{menuUrl,jdbcType=VARCHAR},
+        `menu_url` = #{menuUrl,jdbcType=VARCHAR},
       </if>
       <if test="icon != null">
-        icon = #{icon,jdbcType=VARCHAR},
+        `icon` = #{icon,jdbcType=VARCHAR},
       </if>
       <if test="httpMethod != null">
-        http_method = #{httpMethod,jdbcType=VARCHAR},
+        `http_method` = #{httpMethod,jdbcType=VARCHAR},
       </if>
       <if test="resourceName != null">
-        resource_name = #{resourceName,jdbcType=VARCHAR},
+        `resource_name` = #{resourceName,jdbcType=VARCHAR},
       </if>
       <if test="status != null">
         `status` = #{status,jdbcType=INTEGER},
       </if>
       <if test="creator != null">
-        creator = #{creator,jdbcType=BIGINT},
+        `creator` = #{creator,jdbcType=BIGINT},
       </if>
       <if test="createTime != null">
-        create_time = #{createTime,jdbcType=TIMESTAMP},
+        `create_time` = #{createTime,jdbcType=TIMESTAMP},
       </if>
       <if test="modifier != null">
-        modifier = #{modifier,jdbcType=BIGINT},
+        `modifier` = #{modifier,jdbcType=BIGINT},
       </if>
       <if test="updateTime != null">
-        update_time = #{updateTime,jdbcType=TIMESTAMP},
+        `update_time` = #{updateTime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
-
-<!--auto generated by MybatisCodeHelper on 2020-11-25-->
-  <select id="selectAll" resultMap="SysPermission">
-        select
-               a.id as permission_id,
-               a.parent_id as permission_parent_id,
-               a.`system` as permission_system,
-               a.name as permission_name,
-               a.type as permission_type,
-               a.sort as permission_sort,
-               a.deep as permission_deep,
-               a.menu_url as permission_menu_url,
-               a.icon as permission_icon,
-               a.http_method as permission_http_method,
-               a.resource_name as permission_resource_name,
-               a.status as permission_status,
-               a.creator as permission_creator,
-               a.create_time as permission_create_time,
-               a.modifier as permission_modifier,
-               a.update_time as permission_update_time
-        from sys_permission a
-    </select>
-  <resultMap id="SysPermission" type="com.example.demo.model.SysPermission">
-    <id column="permission_id" jdbcType="BIGINT" property="id" />
-    <result column="permission_parent_id" jdbcType="BIGINT" property="parentId" />
-    <result column="permission_system" jdbcType="VARCHAR" property="system" />
-    <result column="permission_name" jdbcType="VARCHAR" property="name" />
-    <result column="permission_type" jdbcType="INTEGER" property="type" />
-    <result column="permission_sort" jdbcType="INTEGER" property="sort" />
-    <result column="permission_deep" jdbcType="INTEGER" property="deep" />
-    <result column="permission_menu_url" jdbcType="VARCHAR" property="menuUrl" />
-    <result column="permission_icon" jdbcType="VARCHAR" property="icon" />
-    <result column="permission_http_method" jdbcType="VARCHAR" property="httpMethod" />
-    <result column="permission_resource_name" jdbcType="VARCHAR" property="resourceName" />
-    <result column="permission_status" jdbcType="INTEGER" property="status" />
-    <result column="permission_creator" jdbcType="BIGINT" property="creator" />
-    <result column="permission_create_time" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="permission_modifier" jdbcType="BIGINT" property="modifier" />
-    <result column="permission_update_time" jdbcType="TIMESTAMP" property="updateTime" />
-  </resultMap>
-  
-  
 </mapper>
