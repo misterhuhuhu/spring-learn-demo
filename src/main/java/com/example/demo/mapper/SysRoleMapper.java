@@ -1,7 +1,9 @@
 package com.example.demo.mapper;
 
 import com.example.demo.model.SysRole;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface SysRoleMapper {
@@ -26,9 +28,9 @@ public interface SysRoleMapper {
     int updateBatchSelective(List<SysRole> list);
     
     int batchInsert(@Param("list") List<SysRole> list);
-
-
-   List<SysRole> getEntireSysRole();
-   
-
+    
+    
+    List<SysRole> getEntireSysRole();
+    
+    
 }
