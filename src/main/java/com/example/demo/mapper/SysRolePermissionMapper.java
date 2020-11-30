@@ -1,17 +1,13 @@
 package com.example.demo.mapper;
+import org.apache.ibatis.annotations.Param;
+import java.util.List;
 
 import com.example.demo.model.SysRolePermission;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 public interface SysRolePermissionMapper {
     int deleteByPrimaryKey(Long id);
 
     int insert(SysRolePermission record);
-
-    int insertOrUpdate(SysRolePermission record);
-
-    int insertOrUpdateSelective(SysRolePermission record);
 
     int insertSelective(SysRolePermission record);
 
@@ -20,10 +16,8 @@ public interface SysRolePermissionMapper {
     int updateByPrimaryKeySelective(SysRolePermission record);
 
     int updateByPrimaryKey(SysRolePermission record);
+    
+    List<SysRolePermission> selectByRoleId(@Param("roleId")Long roleId);
 
-    int updateBatch(List<SysRolePermission> list);
-
-    int updateBatchSelective(List<SysRolePermission> list);
-
-    int batchInsert(@Param("list") List<SysRolePermission> list);
+	
 }

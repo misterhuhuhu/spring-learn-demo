@@ -1,17 +1,13 @@
 package com.example.demo.mapper;
+import org.apache.ibatis.annotations.Param;
+import java.util.List;
 
 import com.example.demo.model.SysUserRole;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 public interface SysUserRoleMapper {
     int deleteByPrimaryKey(Integer id);
 
     int insert(SysUserRole record);
-
-    int insertOrUpdate(SysUserRole record);
-
-    int insertOrUpdateSelective(SysUserRole record);
 
     int insertSelective(SysUserRole record);
 
@@ -20,10 +16,8 @@ public interface SysUserRoleMapper {
     int updateByPrimaryKeySelective(SysUserRole record);
 
     int updateByPrimaryKey(SysUserRole record);
+    
+    List<SysUserRole> selectByRoleId(@Param("roleId")Long roleId);
 
-    int updateBatch(List<SysUserRole> list);
-
-    int updateBatchSelective(List<SysUserRole> list);
-
-    int batchInsert(@Param("list") List<SysUserRole> list);
+	
 }
