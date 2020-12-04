@@ -21,7 +21,7 @@ spring:
       testOnReturn: false
       poolPreparedStatements: true
   profiles:
-    active: B,A
+    active: B
 
 ---
 # mybatis
