@@ -22,11 +22,11 @@ spring:
       poolPreparedStatements: true
   profiles:
     active: B,A
-#指定打印某个类的日志
-logging:
-  level:
-    com.example.demo.mapper.SysUserMapper: debug
-    com.example.demo.mapper.SysPermissionMapper: debug
+##指定打印某个类的日志
+#logging:
+#  level:
+#    com.example.demo.mapper.SysUserMapper: debug
+#    com.example.demo.mapper.SysPermissionMapper: debug
 
 ---
 # mybatis
