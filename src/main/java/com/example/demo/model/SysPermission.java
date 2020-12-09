@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 import java.util.Date;
@@ -42,8 +43,8 @@ public class SysPermission {
     * ID
     */
     @Id
-    @GeneratedValue(generator  = "myIdStrategy")
-    @GenericGenerator(name = "myIdStrategy", strategy = "uuid")
+    @GeneratedValue(generator  = "myIdStrategy",strategy = GenerationType.AUTO)
+    @GenericGenerator(name = "myIdStrategy", strategy = "com.example.demo.config.MyUUIDGenerator")
     private Long id;
 
     /**
