@@ -11,7 +11,7 @@ spring:
         # 注册到 nacos 的指定 namespace，默认为 public
         namespace: public
   application:
-    name: gateway-nacos
+    name: gateway
 # Nacos帮助文档: https://nacos.io/zh-cn/docs/concepts.html
 
 

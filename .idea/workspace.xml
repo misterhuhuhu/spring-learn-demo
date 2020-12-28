@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="38e46f10-d47b-480d-8871-b73341f38303" name="默认的" comment="GateWay-Nacos">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-nacos/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-nacos/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-nacos/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-nacos/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="JwtTest" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven-repository" />
+        <option name="mavenHome" value="E:\DevelopWare\maven\maven3.6.3" />
+        <option name="userSettingsFile" value="E:\DevelopWare\maven\maven3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1m6cDoKaBCPFnE4MfokpjCjlUV2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatewayNacosApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <option name="VM_PARAMETERS" value="-Dspring.config.location=http://gitlab.e-masspick.com/huhaoning/spring-learn-demo/blob/启动时设置配置文件/src/main/resources/application.yml" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayNacosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway-nacos" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gatewaynacos.GatewayNacosApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38e46f10-d47b-480d-8871-b73341f38303" name="默认的" comment="" />
+      <created>1608817364835</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608817364835</updated>
+      <workItem from="1608817365888" duration="881000" />
+      <workItem from="1608818728946" duration="1562000" />
+      <workItem from="1608821559511" duration="211000" />
+      <workItem from="1608901581646" duration="68000" />
+      <workItem from="1609065310428" duration="2784000" />
+      <workItem from="1609070493292" duration="11000" />
+      <workItem from="1609074622613" duration="2603000" />
+      <workItem from="1609161668512" duration="300000" />
+    </task>
+    <task id="LOCAL-00001" summary="使用：&#10;java -jar -Dspring.config.location=[绝对或相对位置] [包名]">
+      <created>1608818233468</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608818233468</updated>
+    </task>
+    <task id="LOCAL-00002" summary="JwtTest">
+      <created>1609068310339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609068310339</updated>
+    </task>
+    <task id="LOCAL-00003" summary="GateWay-Nacos">
+      <created>1609079682715</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609079682715</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="使用：&#10;java -jar -Dspring.config.location=[绝对或相对位置] [包名]" />
+    <MESSAGE value="使用：&#10;java -jar -Dspring.config.location=[绝对或相对位置，如果有多个用逗号分开] [包名]" />
+    <MESSAGE value="JwtTest" />
+    <MESSAGE value="GateWay-Nacos" />
+    <option name="LAST_COMMIT_MESSAGE" value="GateWay-Nacos" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608821767235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1608821767235" />
+    <state x="495" y="46" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1608821764772">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="495" y="46" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1608821764772" />
+    <state x="433" y="99" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609075604544">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="433" y="99" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609075604544" />
+    <state width="495" height="727" key="DebuggerActiveHint" timestamp="1608818930175">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="495" height="727" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1608818930175" />
+    <state x="644" y="105" width="582" height="612" key="EnvironmentVariablesDialog" timestamp="1608820983949">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="644" y="105" width="582" height="612" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608820983949" />
+    <state x="496" y="108" key="FileChooserDialogImpl" timestamp="1609070501738">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="496" y="108" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609070501738" />
+    <state width="1481" height="296" key="GridCell.Tab.0.bottom" timestamp="1609161897836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="296" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609161897836" />
+    <state width="1481" height="296" key="GridCell.Tab.0.center" timestamp="1609161897836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="296" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609161897836" />
+    <state width="1481" height="296" key="GridCell.Tab.0.left" timestamp="1609161897836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="296" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609161897836" />
+    <state width="1481" height="296" key="GridCell.Tab.0.right" timestamp="1609161897836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="296" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609161897836" />
+    <state width="1481" height="296" key="GridCell.Tab.1.bottom" timestamp="1609161897836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="296" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609161897836" />
+    <state width="1481" height="296" key="GridCell.Tab.1.center" timestamp="1609161897836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="296" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609161897836" />
+    <state width="1481" height="296" key="GridCell.Tab.1.left" timestamp="1609161897836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="296" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609161897836" />
+    <state width="1481" height="296" key="GridCell.Tab.1.right" timestamp="1609161897836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="296" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609161897836" />
+    <state width="741" height="245" key="GridCell.Tab.2.bottom" timestamp="1608821419460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="741" height="245" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608821419460" />
+    <state width="741" height="245" key="GridCell.Tab.2.center" timestamp="1608821419460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="741" height="245" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1608821419460" />
+    <state width="741" height="245" key="GridCell.Tab.2.left" timestamp="1608821419460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="741" height="245" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1608821419460" />
+    <state width="741" height="245" key="GridCell.Tab.2.right" timestamp="1608821419460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="741" height="245" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1608821419460" />
+    <state x="524" y="66" key="RollbackChangesDialog" timestamp="1608821293363">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="66" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608821293363" />
+    <state x="153" y="0" key="SettingsEditor" timestamp="1609076080634">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="153" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609076080634" />
+    <state x="261" y="65" key="Vcs.Push.Dialog.v2" timestamp="1609079685119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="261" y="65" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609079685119" />
+    <state x="499" y="57" key="git4idea.branch.GitSmartOperationDialog" timestamp="1609079230796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="57" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1609079230796" />
+    <state x="358" y="292" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1609074632413">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="358" y="292" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609074632413" />
+    <state x="0" y="0" key="new project wizard" timestamp="1609161705258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1609161705258" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/contoller/HelloController.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
