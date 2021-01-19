@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.typehandler.ExampleTypeHandler;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
@@ -13,6 +14,9 @@ public class DemoApplication {
         final SpringApplication springApplication = new SpringApplication(DemoApplication.class);
         springApplication.setBannerMode(Banner.Mode.OFF);
         springApplication.run(args);
+    
+        // System.out.println("enum="+ExampleTypeHandler.SysUserStatus.ENABLE.toEnum("禁"));
+        // System.out.println("enum="+);
     }
     
 }

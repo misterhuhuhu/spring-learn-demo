@@ -2,6 +2,7 @@ package com.example.demo.mapper;
 
 import com.example.demo.model.SysRolePermissionVO;
 import com.example.demo.model.SysRoleVO;
+import com.example.demo.model.SysUserEnumVO;
 import com.example.demo.model.SysUserRoleVO;
 import com.example.demo.model.SysUserVO;
 import org.junit.jupiter.api.Test;
@@ -60,5 +61,11 @@ class SysRolePermissionMapperTest {
                 System.out.println("size = " + a.getSysUserRoleVOList());
             }
         });
+    }
+    
+    @Test
+    void testTypeHandler(){
+        List<SysUserEnumVO> sysUserVOS = sysUserMapper.selectByAccount("admin");
+        System.out.println(sysUserVOS);
     }
 }
